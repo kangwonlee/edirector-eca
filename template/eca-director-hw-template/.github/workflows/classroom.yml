@@ -1,0 +1,29 @@
+# begin .github/workflows/classroom.yml
+# Thin caller for ECA Director (prompt-only) assignments.
+# Delegates all logic to the shared reusable workflow in workflows-central.
+#
+# Prerequisites (set at the classroom org level):
+#   vars.PYTHON_GRADER_URL  → ghcr.io/kangwonlee/eca-director-pytest-NNN:latest
+#   secrets.CR_PAT, secrets.GOOGLE_API_KEY (or other API keys), etc.
+
+name: Autograding Tests
+on:
+  - push
+  - workflow_dispatch
+  - repository_dispatch
+  - pull_request
+
+permissions:
+  checks: read
+  actions: write
+  contents: read
+
+jobs:
+  grade:
+    uses: kangwonlee/workflows-central/.github/workflows/classroom-prompt-reusable.yml@v2.0.0
+    with:
+      python_grader: ${{ vars.PYTHON_GRADER_URL }}
+      explanation_language: Korean
+    secrets: inherit
+
+# end .github/workflows/classroom.yml
