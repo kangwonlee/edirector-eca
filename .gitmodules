@@ -1,0 +1,3 @@
+[submodule "template/gemini-python-tutor"]
+	path = template/gemini-python-tutor
+	url = git@github.com:kangwonlee/gemini-python-tutor.git
