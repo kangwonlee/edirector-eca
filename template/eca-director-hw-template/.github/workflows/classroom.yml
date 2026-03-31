@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   grade:
-    uses: kangwonlee/workflows-central/.github/workflows/classroom-prompt-reusable.yml@v2.0.0
+    uses: eca2503mon/workflows-central/.github/workflows/classroom-prompt-reusable.yml@v2.0.0
     with:
       python_grader: ${{ vars.PYTHON_GRADER_URL }}
       explanation_language: Korean
