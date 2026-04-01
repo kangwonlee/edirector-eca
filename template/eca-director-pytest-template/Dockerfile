@@ -5,8 +5,7 @@ FROM ghcr.io/kangwonlee/edu-base-raw:60dfc33
 USER root
 
 # Clone gemini-python-tutor (ai_tutor + prompt_pipeline)
-# TODO: update tag to version that includes prompt_pipeline/
-RUN git clone --depth=1 --branch v0.3.13 https://github.com/kangwonlee/gemini-python-tutor /app/temp/ \
+RUN git clone --depth=1 --branch v0.4.0 https://github.com/kangwonlee/gemini-python-tutor /app/temp/ \
     && mkdir -p /app/ai_tutor/ \
     && mv /app/temp/*.py /app/ai_tutor \
     && mv /app/temp/locale/ /app/ai_tutor/locale/ \
