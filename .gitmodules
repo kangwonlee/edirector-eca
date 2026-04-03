@@ -4,3 +4,6 @@
 [submodule "template/eca-director-pytest-template"]
 	path = template/eca-director-pytest-template
 	url = git@github.com:kangwonlee/eca-director-pytest-template.git
+[submodule "template/eca-director-hw-template"]
+	path = template/eca-director-hw-template
+	url = git@github.com:kangwonlee/eca-director-hw-template.git
