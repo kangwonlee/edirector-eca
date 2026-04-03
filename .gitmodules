@@ -1,3 +1,6 @@
 [submodule "template/gemini-python-tutor"]
 	path = template/gemini-python-tutor
 	url = git@github.com:kangwonlee/gemini-python-tutor.git
+[submodule "template/eca-director-pytest-template"]
+	path = template/eca-director-pytest-template
+	url = git@github.com:kangwonlee/eca-director-pytest-template.git
