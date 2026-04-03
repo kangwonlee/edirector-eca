@@ -7,8 +7,10 @@ import pytest
 
 
 # STUDENT_CODE_FOLDER points to CONTAINER_OUTPUT (where exercise.py is generated)
-# The original workspace (with prompt.txt) is at /app/workspace (c_mnt)
-WORKSPACE_MOUNT = pathlib.Path('/app/workspace')
+# WORKSPACE_PATH points to the original workspace (with prompt.md)
+#   - In Docker: /app/workspace (c_mnt)
+#   - On host (canary tests): set to tmp_path by test_samples.py
+WORKSPACE_MOUNT = pathlib.Path(os.getenv('WORKSPACE_PATH', '/app/workspace'))
 
 
 @pytest.fixture
@@ -62,6 +64,6 @@ def script_path(proj_folder:pathlib.Path) -> pathlib.Path:
 @pytest.fixture
 def prompt_path() -> pathlib.Path:
     '''Path to the student prompt file in the workspace mount'''
-    return WORKSPACE_MOUNT / 'prompt.txt'
+    return WORKSPACE_MOUNT / 'prompt.md'
 
 # end tests/conftest.py

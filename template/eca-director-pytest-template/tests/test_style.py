@@ -1,5 +1,4 @@
 # begin tests/test_style.py
-import os
 import pathlib
 import subprocess
 from typing import Tuple
@@ -7,18 +6,7 @@ from typing import Tuple
 import pytest
 
 
-file_path = pathlib.Path(__file__)
-test_folder = file_path.parent.absolute()
-
-proj_folder = pathlib.Path(
-    os.getenv(
-        'STUDENT_CODE_FOLDER',
-        test_folder.parent.absolute()
-    )
-)
-
-
-def test_function_only_in_py_file(script_path:pathlib.Path):
+def test_function_only_in_py_file(script_path: pathlib.Path):
     with open(script_path, 'r') as file:
         lines = file.readlines()
 
@@ -34,7 +22,7 @@ def test_function_only_in_py_file(script_path:pathlib.Path):
 
 
 @pytest.fixture
-def git_log() -> Tuple[str]:
+def git_log(proj_folder: pathlib.Path) -> Tuple[str]:
     return tuple(
         subprocess.check_output(
             ['git', 'log', '--pretty=format"%h%x09%an%x09%ad%x09%s"'],
@@ -44,7 +32,7 @@ def git_log() -> Tuple[str]:
     )
 
 
-def test_git_log(git_log:Tuple[str]):
+def test_git_log(git_log: Tuple[str]):
     new_commits = []
     for line in git_log:
         h, n, d, s = line.split('\t')

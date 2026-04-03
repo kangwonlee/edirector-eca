@@ -1,6 +1,6 @@
 ## [Assignment Title]<br>[과제 제목]
 
-* Prompt file 프롬프트 파일 : `prompt.txt`
+* Prompt file 프롬프트 파일 : `prompt.md`
 * [Assignment description goes here — describe the numerical method or algorithm to implement]
 * [과제 설명 — 구현할 수치 해석 방법이나 알고리즘을 설명하시오]
 
@@ -19,7 +19,7 @@
 
 This is a **prompt engineering** assignment.<br>이 과제는 **프롬프트 엔지니어링** 과제입니다.
 
-1. Write a prompt in `prompt.txt` that instructs the AI to implement the required function.<br>`prompt.txt` 에 필요한 함수를 구현하도록 AI에게 지시하는 프롬프트를 작성하시오.
+1. Write a prompt in `prompt.md` that instructs the AI to implement the required function.<br>`prompt.md` 에 필요한 함수를 구현하도록 AI에게 지시하는 프롬프트를 작성하시오.
 2. Push your changes. The workflow will call the AI to generate `exercise.py` from your prompt.<br>변경 사항을 푸시하면, 워크플로우가 AI를 호출하여 프롬프트로부터 `exercise.py` 를 생성합니다.
 3. The generated code is graded automatically by the test suite.<br>생성된 코드는 테스트 스위트에 의해 자동으로 채점됩니다.
 4. If the tests fail, revise your prompt and push again.<br>테스트가 실패하면 프롬프트를 수정하고 다시 푸시하시오.
@@ -42,14 +42,14 @@ This is a **prompt engineering** assignment.<br>이 과제는 **프롬프트 엔
 
 ## Submission 제출 방법
 
-1. Write your prompt in the `prompt.txt` file.<br>`prompt.txt` 파일에 프롬프트를 작성합니다.
+1. Write your prompt in the `prompt.md` file.<br>`prompt.md` 파일에 프롬프트를 작성합니다.
 2. Use the GitHub online editor to commit and push your changes. (See below for detailed instructions)<br>GitHub 온라인 편집기를 사용하여 수정 사항을 커밋하고 푸시합니다. (자세한 사용법은 아래 참조)
 3. At the Actions tab of your Github repository, please check the result.<br>깃헙 저장소의 Actions 탭에서 결과를 확인 바랍니다.
 
 ## How to Use the GitHub Online Editor<br>Github 온라인 편집기 사용법
 
 * Press the <kbd>.</kbd> key while viewing the files in your repository on GitHub. This will launch a web version of VS Code.<br>저장소의 [Code] 탭을 선택 후 <kbd>.</kbd> 키를 누르면 MS VS Code 의 Web version 이 시작됨
-* Make your changes to the `prompt.txt` file.<br>`prompt.txt` 파일을 수정
+* Make your changes to the `prompt.md` file.<br>`prompt.md` 파일을 수정
 * To commit your changes, click on the branch icon on the left sidebar (the third icon after the magnifying glass).<br>수정 사항을 commit 등록 하려면 왼쪽에서 줄 셋 아래 (확대경 다음) 세번째 가지치기 아이콘 선택
 * Click the "+" sign next to the filename to stage your changes.<br>파일 이름의 오른쪽 + 기호 선택 (staging)
 * Write a brief description of your changes in the text box above.<br>위 빈칸에 변경 사항 설명 입력
@@ -61,7 +61,7 @@ This is a **prompt engineering** assignment.<br>이 과제는 **프롬프트 엔
 * To help you develop better coding habits, we encourage descriptive Git commit messages.<br>보다 바람직한 코딩 습관을 기르기 위해, 커밋 메시지에 보다 자세히 설명하는 것을 권합니다.
 
 ### Guidelines for Commit Messages<br>메시지 작성 지침
-* Describe the change specifically, e.g., "Add epsilon condition to prompt" or "Specify return type in prompt".<br>변경 사항을 구체적으로 설명합니다. 예: "프롬프트에 epsilon 조건 추가" 또는 "프롬프트에 반환 자료형 명시"
+* Describe the change specifically, e.g., "Add edge case for zero input" or "Specify return type in constraints section".<br>변경 사항을 구체적으로 설명합니다. 예: "0 입력 경계 조건 추가" 또는 "제약 조건에 반환 자료형 명시"
 * Use Action Verbs: "Add", "Fix", "Update", "Clarify".<br>영문의 경우, "Add", "Fix", "Update", "Clarify"와 같은 동사로 시작합니다.
 * Keep It Concise: Aim for 15-50 characters.<br>15-50자 정도로 간결하게 작성합니다.
 

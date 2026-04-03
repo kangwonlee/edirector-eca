@@ -1,7 +1,0 @@
-# Please write your prompt below.
-# Describe to the AI assistant what Python code you need.
-# Be specific: include function name(s), parameter names and types, return type, and expected behavior.
-# 아래에 프롬프트를 작성하세요.
-# AI 어시스턴트에게 필요한 파이썬 코드를 구체적으로 설명하세요.
-# 함수 이름, 매개변수 이름과 자료형, 반환 자료형, 예상 동작을 포함하세요.
-
